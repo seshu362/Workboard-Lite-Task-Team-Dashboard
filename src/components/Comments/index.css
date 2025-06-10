@@ -1,0 +1,130 @@
+.comments-container {
+  width: 100%;
+}
+
+.comment-form {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 0.375rem;
+}
+
+.comment-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.author-select {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  background: white;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 0.875rem;
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.comment-submit {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.comments-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.comments-loading {
+  text-align: center;
+  padding: 1rem;
+  color: #6b7280;
+}
+
+.no-comments {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.comment-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.comment-author {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.875rem;
+}
+
+.comment-timestamp {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.comment-text {
+  color: #374151;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .comment-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .comment-input-group {
+    gap: 0.5rem;
+  }
+  
+  .comment-form {
+    padding: 0.75rem;
+  }
+  
+  .comments-list {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comment-item {
+    padding: 0.75rem;
+  }
+  
+  .comment-input {
+    font-size: 1rem; /* Prevent zoom on iOS */
+  }
+}
